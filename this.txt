@@ -1,0 +1,12 @@
+.home-btn {
+	margin:0px;
+	float:left;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 16px;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+	margin:6px 2px 6px 10px;
+	
+}
