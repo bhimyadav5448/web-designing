@@ -1,0 +1,247 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<title>your pubblic profile</title>
+	<link rel="stylesheet" href="pubblic_profile_style.css">
+	<link rel="stylesheet" href="index_style.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="topic-page">
+	<!-------------header----------------------->
+	  <div class="top-container">
+	  <h1>logo/image</h1>
+	  <p>some text fieldset</p>
+	</div> 
+	<!------------------------------------------>
+	<!------navigation bar----------->
+
+	<div class="header" id="myHeader">
+	<button href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </button>
+		<form class="res-search" action="">
+	  <input type="text" placeholder="Search.." name="search2">
+	  <button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+	<div class="side" id="sidemenu">
+	 <button href="javascript:void(0);" class="close_btn" onclick="myFunction()">
+		<i class="fa fa-close"></i>
+	  </button> 
+	<script>
+	function myFunction() {
+		var x = document.getElementById("myHeader");
+		var y = document.getElementById("sidemenu");
+		switch(x.className){
+		
+		case "header":
+			x.className += " responsive";
+			y.className = " side1";
+			break;
+		case "header responsive":
+			x.className = "header";
+			y.className = " side";
+			break;
+		case "header sticky":
+			x.className += " responsive";
+			y.className = " side1";
+			break;
+		case "header sticky responsive":
+			x.className = "header sticky";
+			y.className = " side";
+			break;
+		}
+	}
+	</script>
+	<script>
+	window.onscroll = function() {mFunction()};
+
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop
+
+	function mFunction() {
+	  if (window.pageYOffset >= sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
+	<img class="avatar-img" src="bheem.jpg" alt="avatar">
+	<button onclick="document.location = 'index.html'" class="home-btn"><i class="fa fa-home"></i></button>
+	<div class="ctgry-dropdown">
+	  <button class="ctgry-dropbtn"><i class="fa fa-th"></i></button>
+	  <div class="ctgry-dropdown-content">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+		<a href="#">Link 4</a>
+		<a href="#">Link 5</a>
+		<a href="#">Link 6</a>
+	  </div>
+	</div>
+	<!------------------request course---------------->
+	<div class="rqc-dropdown">
+	  <button class="rqc-dropbtn">Request Course <i class="fa fa-caret-down"></i></button>
+	  <div class="rqc-dropdown-content" >
+		<a href="request_course.html">Request New Course</a>
+		<a href="#">Request Course Update</a>
+	  </div>
+	</div>
+	   <!---------search box--------------------------->
+	  <form class="example" action="/action_page.php">
+	  <input type="text" placeholder="Search.." name="search2">
+	  <button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+	<!-----------------user dropdown-----------------> 
+	<div class="profile-dropdown">
+	  <img class="profile-dropbtn"src="bheem.jpg" alt=""> 
+	  <div class="profile-dropdown-content">
+			<h3 style="margin:0%; ">Welcome <strong>Bheem</strong></h3>
+			<a href="profile.html">My Profile</a>
+			<a href="#">Friend Requests</a>
+			<a href="#">Account Settings</a>
+			<a href="#">Support</a>
+			<a href="index.php?logout='1'">Log Out</a>
+	  </div>
+	</div>
+
+
+	</div>
+	</div>
+	<!----------------- pubblic profile content ----------------->
+<div class="header-block">
+<h1>Bheem yadav</h1>
+</div>
+<div class="left-block">
+<img src="bheem.jpg" ></img>
+<div class="social-icon">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>	
+</div>
+<p style="font-size:90%; text-align:center;">Linked Since:15 April 2018</p>
+
+<ul type="none" style="margin-top:20%;">
+<li >Reputation<div class="num">1</div></li>
+<li >Courses<div class="num">1</div></li>
+<li >Reviews<div class="num">1,000</div></li>
+</ul>
+</div>
+</div>
+<div class="right-block">
+<div class="biography" id="bio" style="">
+<div class="biohead">
+Biography
+</div>
+<p style="margin:10px;font-size:1rem;">
+bheem jkhiohwqiojh ,wdkjwok;coneqropweiopirpoc2i iop32icpoib0 opi5 hjkejv oife
+bheem jkhiohwqiojh ,wdkjwok;coneqropweiopirpoc2i iop32icpoib0 opi5 hjkejv oife
+bheem jkhiohwqiojh ,wdkjwok;coneqropweiopirpoc2i iop32icpoib0 opi5 hjkejv oife
+bheem jkhiohwqiojh ,wdkjwok;coneqropweiopirpoc2i iop32icpoib0 opi5 hjkejv oife
+ramramramramramramramramramramramramramramramramramramramramr amramramramramramramramramramramramramramramramram ram ram
+bheem jkhiohwqiojh ,wdkjwok;coneqropweiopirpoc2i iop32icpoib0 opi5 hjkejv oife
+bheem jkhiohwqiojh ,wdkjwok;coneqropweiopirpoc2i iop32icpoib0 opi5 hjkejv oife
+ramramramramramramramramramramramramramramramramramramramramr amramramramramramramramramramramram
+bheem jkhiohwqiojh ,wdkjwok;coneqropweiopirpoc2i iop32icpoib0 opi5 hjkejv oife
+bheem jkhiohwqiojh ,wdkjwok;coneqropweiopirpoc2i iop32icpoib0 opi5 hjkejv oife
+bheem jkhiohwqiojh ,wdkjwok;coneqropweiopirpoc2i iop32icpoib0 opi5 hjkejv oife
+bheem jkhiohwqiojh ,wdkjwok;coneqropweiopirpoc2i iop32icpoib0 opi5 hjkejv oife
+bheem jkhiohwqiojh ,wdkjwok;coneqropweiopirpoc2i iop32icpoib0 opi5 hjkejv oife</p >
+
+
+</div>
+<button id="read-more" onclick="read(1)">Read More</button>
+<button id="read-less" onclick="read(2)" style="display:none; background:#2196f3;">Read less</button>
+
+
+
+<script>
+	function read(a)
+	{
+	var read_more = document.getElementById('read-more');
+	var read_less = document.getElementById('read-less');
+	if(a==1)
+	{
+	read_more.style.display ='none' ;
+	read_less.style.display = 'block';
+	document.getElementById("bio").style.height = "auto";
+	}
+	if(a==2)
+	{
+	read_more.style.display ='block' ;
+	read_less.style.display = 'none';
+	document.getElementById("bio").style.height = "140px";
+	}
+	}
+</script>
+
+<div class="content-block">
+<div class="option">
+<a onclick="display(1);">link 1</a>
+<a onclick="display(2);">link 2</a>
+<a onclick="display(3);">link 3</a>
+</div>
+<p id="one" style="display:block;">this is link one</p>
+<p id="two" style="display:none;">this is link two</p>
+<p id="three" style="display:none;">this is link three</p>
+<script>
+	
+	function display(a)
+	{
+	if(a==1)
+	{
+	document.getElementById('one').style.display = 'block';
+	document.getElementById('two').style.display = 'none';
+	document.getElementById('three').style.display = 'none';
+		
+	}
+	if(a==2)
+	{
+	document.getElementById('one').style.display = 'none';
+	document.getElementById('two').style.display = 'block';
+		document.getElementById('three').style.display = 'none';
+	}
+	if(a==3)
+	{
+	document.getElementById('one').style.display = 'none';
+	document.getElementById('two').style.display = 'none';
+		document.getElementById('three').style.display = 'block';
+	}
+	}	
+	</script>
+</div>
+<div class="tag-block">
+<p style="font-weight:bold">Tags</p>
+<hr/>
+<a href="#">item name 1</a>
+<a href="#">item name 2</a>
+</div>
+<div class="share-block">
+<p style="font-weight:bold">Share This Page</p>
+<hr/>
+<a href="#" class="fa fa-facebook"> Facebook</a>
+<a href="#" class="fa fa-twitter"> Twitter</a>
+</div>
+</div>
+
+<footer>
+	<div class="opt">
+	<a href="#">Home</a>
+	<a href="#">About Us</a>
+	<a href="#">Contact Us</a>
+	<a href="#">Help & FAQ</a>
+	<a href="#">Feedback</a>
+	</div>
+	<a href="https://www.facebook.com/mytutorial.links.5"> <img src ="facebook.png" alt="facebook logo" class="footer-icon"> </a>
+	<a href="https://www.facebook.com/mytutorial.links.5"> <img src="twitter.png" alt="twitter logo"class="footer-icon"></a>
+	<p>&copy;<?php echo date("Y");?> @mytutoriallinks.com</p>
+</footer>
+</body>
+</html>

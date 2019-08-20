@@ -1,0 +1,364 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Android Development Tutorials</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="index_style.css">
+	<link rel="stylesheet" href="next_style.css">
+</head>
+<body class="topic-page">
+<!-------------header----------------------->
+	  <div class="top-container">
+	  <h1>logo/image</h1>
+	  <p>some text fieldset</p>
+	</div> 
+	<!------------------------------------------>
+	<!------navigation bar----------->
+
+	<div class="header" id="myHeader">
+	<button href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </button>
+		<form class="res-search" action="">
+	  <input type="text" placeholder="Search.." name="search2">
+	  <button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+	<div class="side" id="sidemenu">
+	 <button href="javascript:void(0);" class="close_btn" onclick="myFunction()">
+		<i class="fa fa-close"></i>
+	  </button> 
+	<script>
+	function myFunction() {
+		var x = document.getElementById("myHeader");
+		var y = document.getElementById("sidemenu");
+		switch(x.className){
+		
+		case "header":
+			x.className += " responsive";
+			y.className = " side1";
+			break;
+		case "header responsive":
+			x.className = "header";
+			y.className = " side";
+			break;
+		case "header sticky":
+			x.className += " responsive";
+			y.className = " side1";
+			break;
+		case "header sticky responsive":
+			x.className = "header sticky";
+			y.className = " side";
+			break;
+		}
+	}
+	</script>
+	<script>
+	window.onscroll = function() {mFunction()};
+
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop
+
+	function mFunction() {
+	  if (window.pageYOffset >= sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
+	<img class="avatar-img" src="bheem.jpg" alt="avatar">
+	<button onclick="document.location = 'index.html'" class="home-btn"><i class="fa fa-home"></i></button>
+	<div class="ctgry-dropdown">
+	  <button class="ctgry-dropbtn"><i class="fa fa-th"></i></button>
+	  <div class="ctgry-dropdown-content">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+		<a href="#">Link 4</a>
+		<a href="#">Link 5</a>
+		<a href="#">Link 6</a>
+	  </div>
+	</div>
+	<!------------------request course---------------->
+	<div class="rqc-dropdown">
+	  <button class="rqc-dropbtn">Request Course <i class="fa fa-caret-down"></i></button>
+	  <div class="rqc-dropdown-content" >
+		<a href="request_course.html">Request New Course</a>
+		<a href="#">Request Course Update</a>
+	  </div>
+	</div>
+	   <!---------search box--------------------------->
+	  <form class="example" action="/action_page.php">
+	  <input type="text" placeholder="Search.." name="search2">
+	  <button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+	<!-----------------user dropdown-----------------> 
+	<div class="profile-dropdown">
+	  <img class="profile-dropbtn"src="bheem.jpg" alt=""> 
+	  <div class="profile-dropdown-content">
+			<h3 style="margin:0%; ">Welcome <strong>Bheem</strong></h3>
+			<a href="profile.html">My Profile</a>
+			<a href="#">Friend Requests</a>
+			<a href="#">Account Settings</a>
+			<a href="#">Support</a>
+			<a href="index.php?logout='1'">Log Out</a>
+	  </div>
+	</div>
+
+
+	</div>
+	</div>
+
+<!-----------tutorial name-------------------->
+<div class="tutorial-name">
+<img src="android-development_logo.svg" style="display:inline; height:100px; width:100px;margin:0% 5%;"></img>
+<h1 style="display:inline;">Android Development</h1>
+</div>
+    
+
+<!-------top tutorial bar--------------->
+
+ <!--------content------------------->
+  <div class="content">
+  <!--------------left block----------->
+  <div class="block-left">
+  <p>Importants</p>
+  </div>
+  <!----------middle block-------------->
+  <div class="block-middle">
+	  <div class="top-tutorial">
+		  <p>Top Tutorial Links</p>
+		  <a onclick="document.getElementById('fil').style.display = 'block'"><p class="filter-btn" style="float:right;">Filters</p></a>
+	  </div>
+	<div class="main-block-items">
+		<div>
+			<a href="https://hackr.io/tutorial/android-app-development-by-stanford">
+			 <img style="height:auto; width:10%;float:left;" src="android-development_logo.svg"></img>
+			</a>
+		</div>
+	  <div class="left">
+		<div class="title">
+				<a href="https://hackr.io/tutorial/android-app-development-by-stanford" class="tutorial-title" title="Android App Development by Stanford">Android App Development by Stanford</a>
+		  
+		</div>
+		<div class="footer">
+		  <div class="footer-actions">
+			  <div>
+				<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+				<a href="#"><i class="fa fa-thumbs-o-down"></i></a>
+			  </div>
+			<div class="save">
+			  <a href="https://hackr.io/tutorial/android-app-development-by-stanford?modal=save" class="btn"><i class="fa fa-bookmark"></i>&nbsp;Save</a>
+			</div>
+			<div class="comments" >
+			  <a href="https://hackr.io/tutorial/android-app-development-by-stanford" class="btn"><i class="fa fa-comment"></i>&nbsp;Comments</a>
+			</div>
+		  </div>
+		  <div class="btm-footer">
+			<div class="author">
+			  <span class="txt">Submitted by</span>
+			  <a href="https://hackr.io/shobhit-jain">bheem</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	<div class="right" >
+		<div class="label1">1OO</div>
+		<span class="label1">Free</span>
+		<span class="label1"><i class="fa fa-book"></i>Book</span>
+	</div>
+	  <button class="collapsible"></button>
+	  <div class="content1">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  </div>
+	</div>
+
+	<div class="main-block-items">
+		<div>
+			<a href="https://hackr.io/tutorial/android-app-development-by-stanford">
+			 <img style="height:auto; width:10%;float:left;" src="" alt="Demo"></img>
+			</a>
+		</div>
+	  <div class="left">
+		<div class="title">
+				<a href="https://hackr.io/tutorial/android-app-development-by-stanford" class="tutorial-title" title="Android App Development by Stanford">Title or name of the source</a>
+		  
+		</div>
+		<div class="footer">
+		  <div class="footer-actions">
+			  <div>
+				<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+				<a href="#"><i class="fa fa-thumbs-o-down"></i></a>
+			  </div>
+			<div class="save">
+			  <a href="https://hackr.io/tutorial/android-app-development-by-stanford?modal=save" class="btn"><i class="fa fa-bookmark"></i>&nbsp;Save</a>
+			</div>
+			<div class="comments" >
+			  <a href="https://hackr.io/tutorial/android-app-development-by-stanford" class="btn"><i class="fa fa-comment"></i>&nbsp;Comments</a>
+			</div>
+		  </div>
+		  <div class="btm-footer">
+			<div class="author">
+			  <span class="txt">Submitted by</span>
+			  <a href="https://hackr.io/shobhit-jain">bheem</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	<div class="right" >
+		<div class="label1">1OO</div>
+		<span class="label1">Free</span>
+		<span class="label1"><i class="fa fa-play"></i>video</span>
+	</div>
+	  <button class="collapsible"></button>
+	  <div class="content1">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  </div>
+	</div>
+
+
+		<div class="main-block-items">
+		<div>
+			<a href="https://hackr.io/tutorial/android-app-development-by-stanford">
+			 <img style="height:auto; width:10%;float:left;" src="" alt="Demo"></img>
+			</a>
+		</div>
+	  <div class="left">
+		<div class="title">
+				<a href="https://hackr.io/tutorial/android-app-development-by-stanford" class="tutorial-title" title="Android App Development by Stanford">Title or name of the source</a>
+		  
+		</div>
+		<div class="footer">
+		  <div class="footer-actions">
+			  <div>
+				<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+				<a href="#"><i class="fa fa-thumbs-o-down"></i></a>
+			  </div>
+			<div class="save">
+			  <a href="https://hackr.io/tutorial/android-app-development-by-stanford?modal=save" class="btn"><i class="fa fa-bookmark"></i>&nbsp;Save</a>
+			</div>
+			<div class="comments" >
+			  <a href="https://hackr.io/tutorial/android-app-development-by-stanford" class="btn"><i class="fa fa-comment"></i>&nbsp;Comments</a>
+			</div>
+		  </div>
+		  <div class="btm-footer">
+			<div class="author">
+			  <span class="txt">Submitted by</span>
+			  <a href="https://hackr.io/shobhit-jain">bheem</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	<div class="right" >
+		<div class="label1">1OO</div>
+		<span class="label1">Paid</span>
+		<span class="label1"><i class="fa fa-play"></i>video</span>
+	</div>
+	  <button class="collapsible"></button>
+	  <div class="content1">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  </div>
+	</div>
+	
+	
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+ <!---------------right-block---------------------------->
+ <div class="filterbg" id="fil">
+  <div class="block-right fanimate">
+  <div class="filter-content">
+  <span onclick="document.getElementById('fil').style.display='none'" class="filter_close" title="Close Filters">&times;</span>
+  <!---------------filter&checkbox------------------------------->
+  <div style="font-size:20px; font-weight:500; color:#3c7dc0;">Filters</div>
+  <div style="font-size:15px; font-weight:500;">Level</div>
+  <label class="container">Beginer
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Intermidiate
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Expert
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<div style="font-size:15px; font-weight:500;">Language</div>
+  <label class="container">Hindi
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">English
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Others
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<div style="font-size:15px; font-weight:500;">Price</div>
+  <label class="container">Free
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Paid
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<div style="font-size:15px; font-weight:500;">Type</div>
+  <label class="container">Video
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">PDF Files
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Theory
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+  </div>
+  </div> 
+  </div> 
+   
+</div>
+ 
+ 
+<!-------------------------------footer----------------------------------------------> 
+ <footer>
+	<div class="opt">
+	<a href="#">Home</a>
+	<a href="#">About Us</a>
+	<a href="#">Contact Us</a>
+	<a href="#">Help & FAQ</a>
+	<a href="#">Feedback</a>
+	</div>
+	<a href="https://www.facebook.com/mytutorial.links.5"> <img src ="facebook.png" alt="facebook logo" class="footer-icon"> </a>
+	<a href="https://www.facebook.com/mytutorial.links.5"> <img src="twitter.png" alt="twitter logo"class="footer-icon"></a>
+	<p>&copy;<?php echo date("Y");?> @mytutoriallinks.com</p>
+</footer> 
+</body>
+</html>

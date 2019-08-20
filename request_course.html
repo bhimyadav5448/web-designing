@@ -1,0 +1,143 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Learn Android Development - [2018] Most Upvoted Tutorials |  </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="index_style.css">
+	<link rel="stylesheet" href="request_course_style.css">
+</head>
+<body class="topic-page">
+<!-------------header----------------------->
+	  <div class="top-container">
+	  <h1>logo/image</h1>
+	  <p>some text fieldset</p>
+	  </div> 
+	<!------------------------------------------>
+	<!------navigation bar----------->
+
+	<div class="header" id="myHeader">
+	<button href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </button>
+		<form class="res-search" action="">
+	  <input type="text" placeholder="Search.." name="search2">
+	  <button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+	<div class="side" id="sidemenu">
+	 <button href="javascript:void(0);" class="close_btn" onclick="myFunction()">
+		<i class="fa fa-close"></i>
+	  </button> 
+	<script>
+	function myFunction() {
+		var x = document.getElementById("myHeader");
+		var y = document.getElementById("sidemenu");
+		switch(x.className){
+		
+		case "header":
+			x.className += " responsive";
+			y.className = " side1";
+			break;
+		case "header responsive":
+			x.className = "header";
+			y.className = " side";
+			break;
+		case "header sticky":
+			x.className += " responsive";
+			y.className = " side1";
+			break;
+		case "header sticky responsive":
+			x.className = "header sticky";
+			y.className = " side";
+			break;
+		}
+	}
+	</script>
+	<script>
+	window.onscroll = function() {mFunction()};
+
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop
+
+	function mFunction() {
+	  if (window.pageYOffset >= sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
+	<img class="avatar-img" src="bheem.jpg" alt="avatar">
+	<button onclick="document.location = 'index.html'" class="home-btn"><i class="fa fa-home"></i></button>
+	<div class="ctgry-dropdown">
+	  <button class="ctgry-dropbtn"><i class="fa fa-th"></i></button>
+	  <div class="ctgry-dropdown-content">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+		<a href="#">Link 4</a>
+		<a href="#">Link 5</a>
+		<a href="#">Link 6</a>
+	  </div>
+	</div>
+	<!------------------request course---------------->
+	<div class="rqc-dropdown">
+	  <button class="rqc-dropbtn">Request Course <i class="fa fa-caret-down"></i></button>
+	  <div class="rqc-dropdown-content" >
+		<a href="request_course.html">Request New Course</a>
+		<a href="#">Request Course Update</a>
+	  </div>
+	</div>
+	   <!---------search box--------------------------->
+	  <form class="example" action="/action_page.php">
+	  <input type="text" placeholder="Search.." name="search2">
+	  <button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+	<!-----------------user dropdown-----------------> 
+	<div class="profile-dropdown">
+	  <img class="profile-dropbtn"src="bheem.jpg" alt=""> 
+	  <div class="profile-dropdown-content">
+			<h3 style="margin:0%; ">Welcome <strong>Bheem</strong></h3>
+			<a href="profile.html">My Profile</a>
+			<a href="#">Friend Requests</a>
+			<a href="#">Account Settings</a>
+			<a href="#">Support</a>
+			<a href="index.php?logout='1'">Log Out</a>
+	  </div>
+	</div>
+
+
+	</div>
+	</div>
+<!---------------------request course------------------------------->
+<div class="rq-mainblock">
+<div class="rq-header">
+<h1>Request Course</h1>
+</div>
+<div class="input-block">
+<p>Name of the course</p>
+<input type="text" name="course" placeholder="Name of the course">
+<p>user name</p>
+<input type="text" name="name" placeholder="User Name">
+<p>Email</p>
+<input type="email" name="email" placeholder="Your Email Id">
+<input type="submit" name="email" value="Submit">
+</div>
+</div>
+ 
+<!-------------------------------footer----------------------------------------------> 
+<footer>
+	<div class="opt">
+	<a href="#">Home</a>
+	<a href="#">About Us</a>
+	<a href="#">Contact Us</a>
+	<a href="#">Help & FAQ</a>
+	<a href="#">Feedback</a>
+	</div>
+	<a href="https://www.facebook.com/mytutorial.links.5"> <img src ="facebook.png" alt="facebook logo" class="footer-icon"> </a>
+	<a href="https://www.facebook.com/mytutorial.links.5"> <img src="twitter.png" alt="twitter logo"class="footer-icon"></a>
+	<p>&copy;<?php echo date("Y");?> @mytutoriallinks.com</p>
+</footer>
+</body>
+</html>

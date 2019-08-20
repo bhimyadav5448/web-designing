@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+	<meta charset="UTF-8">
+	<title>Edit Profile Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="index_style.css" >
+	<link rel="stylesheet" href="profile_style.css">
+</head>
+
+<body class="topic-page">
+	<!-------------header----------------------->
+	  <div class="top-container">
+	  <h1>logo/image</h1>
+	  <p>some text fieldset</p>
+	</div> 
+	<!------------------------------------------>
+	<!------navigation bar----------->
+
+	<div class="header" id="myHeader">
+	<button href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </button>
+		<form class="res-search" action="/action_page.php">
+	  <input type="text" placeholder="Search.." name="search2">
+	  <button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+	<div class="side" id="sidemenu">
+	 <button href="javascript:void(0);" class="close_btn" onclick="myFunction()">
+		<i class="fa fa-close"></i>
+	  </button> 
+	<script>
+	function myFunction() {
+		var x = document.getElementById("myHeader");
+		var y = document.getElementById("sidemenu");
+		switch(x.className){
+		
+		case "header":
+			x.className += " responsive";
+			y.className = " side1";
+			break;
+		case "header responsive":
+			x.className = "header";
+			y.className = " side";
+			break;
+		case "header sticky":
+			x.className += " responsive";
+			y.className = " side1";
+			break;
+		case "header sticky responsive":
+			x.className = "header sticky";
+			y.className = " side";
+			break;
+		}
+	}
+	</script>
+	<script>
+	window.onscroll = function() {mFunction()};
+
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop
+
+	function mFunction() {
+	  if (window.pageYOffset >= sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
+	<img class="avatar-img" src="bheem.jpg" alt="avatar">
+	<button onclick="document.location = 'index.html'" class="home-btn"><i class="fa fa-home"></i></button>
+	<div class="ctgry-dropdown">
+	  <button class="ctgry-dropbtn"><i class="fa fa-th"></i></button>
+	  <div class="ctgry-dropdown-content">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+		<a href="#">Link 4</a>
+		<a href="#">Link 5</a>
+		<a href="#">Link 6</a>
+	  </div>
+	</div>
+	<!------------------request course---------------->
+	<div class="rqc-dropdown">
+	  <button class="rqc-dropbtn">Request Course <i class="fa fa-caret-down"></i></button>
+	  <div class="rqc-dropdown-content" >
+		<a href="request_course.html">Request New Course</a>
+		<a href="#">Request Course Update</a>
+	  </div>
+	</div>
+	   <!---------search box--------------------------->
+	  <form class="example" action="/action_page.php">
+	  <input type="text" placeholder="Search.." name="search2">
+	  <button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+	<!-----------------user dropdown-----------------> 
+	<div class="profile-dropdown">
+	  <img class="profile-dropbtn"src="bheem.jpg" alt=""> 
+	  <div class="profile-dropdown-content">
+			<h3 style="margin:0%; ">Welcome <strong>Bheem</strong></h3>
+			<a href="profile.html">My Profile</a>
+			<a href="#">Friend Requests</a>
+			<a href="#">Account Settings</a>
+			<a href="#">Support</a>
+			<a href="index.php?logout='1'">Log Out</a>
+	  </div>
+	</div>
+
+
+	</div>
+	</div>
+<!------------------------- profile content ------------------------->
+  <div class="block">
+  <img src="bheem.jpg"></img>
+  <p>Bheem Yadav</p>
+    <div class="dropdown-content">
+        <a onclick="display(1);">Profile</a>
+        <a  onclick="display(2);">Profile Photo</a>
+        <a href="pubblic_profile.html">My Pubblic Profile</a>
+	</div>
+	</div>
+	<script>
+	
+	function display(a)
+	{
+	if(a==1)
+	{
+	document.getElementById('imguplod').style.display = 'none';
+		document.getElementById('sc-edprofile').style.display = 'block';
+	}
+	if(a==2)
+	{
+	document.getElementById('imguplod').style.display = 'block';
+		document.getElementById('sc-edprofile').style.display = 'none';
+	}
+	}	
+	</script>
+<div id="sc-edprofile" >
+  <h1>Edit Profile</h1>
+  <div class="sc-container">
+    <input type="text" placeholder="First Name" />
+    <input type="text" placeholder="Last Name" />
+    <textarea placeholder="Bio" /></textarea>
+    <select>
+      <option value="">Male</option>
+      <option value="">Female</option>
+    </select>
+	<input type="text" placeholder="Facebook Profile URL" />
+    <input type="text" placeholder="Twitter Profile URL" />
+    <input type="text" placeholder="Google+ Profile URL" />
+    <input type="text" placeholder="LinkedIn Profile URL" />
+    <input type="submit" value="Save" />
+  </div>
+</div>
+  
+<div id="imguplod" class="img-container">
+    <h1>Edit Profile Photo 
+        <small>with preview</small>
+    </h1>
+	<p style="text-align:center;margin-top:20px;">Select image to upload:</p>
+    <div class="avatar-upload">
+	 <div class="avatar-preview">
+            <div id="imagePreview" style="background-image: url(new/bheem.jpg);">
+			
+            </div>
+     </div>	
+     <div class="avatar-edit">
+		<form action="" method="post" enctype="multipart/form-data" id="myForm">
+        <input type='file'  name="file" id="imageUpload"/ >
+        <label for="imageUpload"></label>
+			  
+        </form>
+	 </div>
+     <button class="upload" onclick="submitform();">Upload <i class="fa fa-upload"></i></button>
+	 </div>
+	<script>
+	function submitform()
+	{
+	document.getElementById("myForm").submit();
+	}
+	</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script  src="js/index.js"></script>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<footer>
+	<div class="opt">
+	<a href="#">Home</a>
+	<a href="#">About Us</a>
+	<a href="#">Contact Us</a>
+	<a href="#">Help & FAQ</a>
+	<a href="#">Feedback</a>
+	</div>
+	<a href="https://www.facebook.com/mytutorial.links.5"> <img src ="facebook.png" alt="facebook logo" class="footer-icon"> </a>
+	<a href="https://www.facebook.com/mytutorial.links.5"> <img src="twitter.png" alt="twitter logo"class="footer-icon"></a>
+	<p>&copy;<?php echo date("Y");?> @mytutoriallinks.com</p>
+</footer>
+</body>
+</html>

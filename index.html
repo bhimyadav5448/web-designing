@@ -1,0 +1,229 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+    <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bheem creation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="main_content.css">
+<link rel="stylesheet" href="index_style.css">
+
+
+</head>
+<body class="topic-page">
+<!-------------header----------------------->
+  <div class="top-container">
+  <h1>logo/image</h1>
+  <p>some text fieldset</p>
+</div> 
+<!------------------------------------------>
+<!------navigation bar----------->
+
+<div class="header" id="myHeader">
+<button href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </button>
+    <form class="res-search" action="/action_page.php">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<div class="side" id="sidemenu">
+ <button href="javascript:void(0);" class="close_btn" onclick="myFunction()">
+    <i class="fa fa-close"></i>
+  </button> 
+<script>
+function myFunction() {
+    var x = document.getElementById("myHeader");
+	var y = document.getElementById("sidemenu");
+    switch(x.className){
+	
+	case "header":
+        x.className += " responsive";
+        y.className = " side1";
+		break;
+	case "header responsive":
+        x.className = "header";
+        y.className = " side";
+		break;
+	case "header sticky":
+        x.className += " responsive";
+        y.className = " side1";
+		break;
+	case "header sticky responsive":
+        x.className = "header sticky";
+        y.className = " side";
+		break;
+	}
+}
+</script>
+<script>
+window.onscroll = function() {mFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop
+
+function mFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<img class="avatar-img" src="bheem.jpg" alt="avatar">
+<button onclick="document.location = 'index.html'" class="home-btn"><i class="fa fa-home"></i></button>
+<div class="ctgry-dropdown">
+  <button class="ctgry-dropbtn"><i class="fa fa-th"></i></button>
+  <div class="ctgry-dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+	<a href="#">Link 4</a>
+    <a href="#">Link 5</a>
+    <a href="#">Link 6</a>
+  </div>
+</div>
+<!------------------request course---------------->
+<div class="rqc-dropdown">
+  <button class="rqc-dropbtn">Request Course <i class="fa fa-caret-down"></i></button>
+  <div class="rqc-dropdown-content" >
+    <a href="request_course.html">Request New Course</a>
+    <a href="#">Request Course Update</a>
+  </div>
+</div>
+   <!---------search box--------------------------->
+  <form class="example" action="/action_page.php">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<!-----------------user dropdown-----------------> 
+<div class="profile-dropdown">
+  <img class="profile-dropbtn"src="bheem.jpg" alt=""> 
+  <div class="profile-dropdown-content">
+		<h3 style="margin:0%; ">Welcome <strong>Bheem</strong></h3>
+        <a href="profile.html">My Profile</a>
+        <a href="#">Friend Requests</a>
+        <a href="#">Account Settings</a>
+        <a href="#">Support</a>
+        <a href="index.php?logout='1'">Log Out</a>
+  </div>
+</div>
+
+
+</div>
+</div>
+<!-----------------------content----------------------------->
+<div style="clear:left;" class="wrapper">        
+  <div class="cols">
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+			 <a href="next.html" data-alias="" class="topic-grid-item js-topic-grid-item">
+				<div class="container">
+					<div class="front" >
+					<img class="topic-thumbnail" src="android-development_logo.svg" alt="Android Development Tutorials and courses">
+						<div class="inner-front">
+							<p>Android Development</p>
+              
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner-back" >
+						  <p>Android software development is the process by which new applications are created for devices running the Android operating system. Officially, apps can be written using Java, C++ or Kotlin using the Android software development kit</p>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+			
+		   <div class="col" ontouchstart="this.classList.toggle('hover');">
+			 <a href="tutorials/learn-android-development/amp" data-alias="" class="topic-grid-item js-topic-grid-item">
+				<div class="container">
+					<div class="front" >
+					<img class="topic-thumbnail" src="tutorials/learn-apache-spark/svg/apache-spark_logo.svg" alt="Apache Spark Tutorials and courses">
+						<div class="inner-front">
+							<p>Demo </p>
+              
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner-back">
+						  <p>On this side some details can be mention to make more detailed block for user friendly designing purpose.</p>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+			
+		   <div class="col" ontouchstart="this.classList.toggle('hover');">
+			 <a href="tutorials/learn-android-development/amp" data-alias="" class="topic-grid-item js-topic-grid-item">
+				<div class="container">
+					<div class="front" >
+					<img class="topic-thumbnail" src="tutorials/learn-asp-net/svg/asp-net_logo.svg" alt="ASP.NET Tutorials and courses">
+						<div class="inner-front">
+							<p>Demo </p>
+              
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner-back">
+						  <p>On this side some details can be mention to make more detailed block for user friendly designing purpose.</p>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+			
+		   <div class="col" ontouchstart="this.classList.toggle('hover');">
+			 <a href="tutorials/learn-android-development/amp" data-alias="" class="topic-grid-item js-topic-grid-item">
+				<div class="container">
+					<div class="front" >
+					<img class="topic-thumbnail" src="tutorials/learn-asp-net/svg/asp-net_logo.svg" alt="ASP.NET Tutorials and courses">
+						<div class="inner-front">
+							<p>Demo </p>
+              
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner-back">
+						  <p>On this side some details can be mention to make more detailed block for user friendly designing purpose.</p>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+						
+		   <div class="col" ontouchstart="this.classList.toggle('hover');">
+			 <a href="tutorials/learn-android-development/amp" data-alias="" class="topic-grid-item js-topic-grid-item">
+				<div class="container">
+					<div class="front" >
+					<img class="topic-thumbnail" src="tutorials/learn-asp-net/svg/asp-net_logo.svg" alt="ASP.NET Tutorials and courses">
+						<div class="inner-front">
+							<p>Demo </p>
+              
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner-back">
+						  <p>On this side some details can be mention to make more detailed block for user friendly designing purpose.</p>
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+<footer>
+	<div class="opt">
+	<a href="#">Home</a>
+	<a href="#">About Us</a>
+	<a href="#">Contact Us</a>
+	<a href="#">Help & FAQ</a>
+	<a href="#">Feedback</a>
+	</div>
+	<a href="https://www.facebook.com/mytutorial.links.5"> <img src ="facebook.png" alt="facebook logo" class="footer-icon"> </a>
+	<a href="https://www.facebook.com/mytutorial.links.5"> <img src="twitter.png" alt="twitter logo"class="footer-icon"></a>
+	<p>&copy;<?php echo date("Y");?> @mytutoriallinks.com</p>
+</footer>
+</body>
+</html>
